@@ -9,7 +9,12 @@ const Navbar = () => {
     <nav>
       <ul>
         <li>home</li>
-        <Link href="/host/event">Host</Link>
+        <li>
+          <Link href="/host/event">Host</Link>
+        </li>
+        <li>
+          <Link href="/events">events</Link>
+        </li>
       </ul>
 
       <button onClick={() => signIn()}>Login</button>
