@@ -7,10 +7,6 @@ import supabase from "../../supabase/supabase";
 export default function event() {
   const [name, setName] = useState("");
 
-  const submitForm = async () => {
-    let { data: events, error } = await supabase.from("events").select("*");
-    console.log(events);
-  };
   return (
     <>
       <Head>
@@ -27,7 +23,7 @@ export default function event() {
           placeholder="name"
           onChange={(e) => setName(e.target.value)}
         />
-        <button onClick={() => submitForm()}>create</button>
+        {/* <button onClick={() => submitForm()}>create</button> */}
       </main>
     </>
   );

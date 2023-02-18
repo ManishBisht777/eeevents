@@ -9,10 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next-auth/supabase-adapter": "^0.2.1",
     "@next/font": "13.1.6",
     "@supabase/supabase-js": "^2.8.0",
     "eslint": "8.34.0",
     "eslint-config-next": "13.1.6",
+    "jsonwebtoken": "^9.0.0",
     "next": "13.1.6",
     "next-auth": "^4.19.2",
     "react": "18.2.0",
