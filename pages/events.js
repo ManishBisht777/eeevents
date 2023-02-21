@@ -3,6 +3,7 @@ import Navbar from "@/components/navbar/Navbar";
 import { getEvents } from "@/services/supaService";
 import { useEffect, useState } from "react";
 import supabase from "../supabase/supabase";
+import Event from "@/components/event/Event";
 
 export default function events() {
   const [eventsList, setEventsList] = useState();
@@ -37,6 +38,7 @@ export default function events() {
           eventsList.map((event) => {
             return <div key={event.name}>{event.name}</div>;
           })}
+        <Event />
       </main>
     </>
   );
